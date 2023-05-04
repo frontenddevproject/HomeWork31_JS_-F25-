@@ -19,6 +19,7 @@ class RocketLauncher {
       const textBlock = document.querySelector(".text-block");
 
       textBlock.innerHTML = "";
+
          setInterval( () => {
             console.log(`${this.fuelQuantity} %`);
             this.fuelQuantity += 10; 
@@ -44,7 +45,7 @@ class RocketLauncher {
                } else {
                   console.log ("Start is not possible, not all systems are ready");
                   }
-            }, 2000);
+               }, 2000);
 
                return this;
             }
